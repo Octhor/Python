@@ -29,10 +29,6 @@ for x in root.findall("./*"):
             comandos_numeros = int(''.join(c for c in comandos_lista[1] if c not in '("){.}<>_,'))
             if comandos_numeros != 0:
                 print("COMANDOS ARMAZENADOS:", Back.RED, comandos_numeros, Style.RESET_ALL,"|")
-            #Workingset em inteiro
-            
-            
-        
 
 #Access the process row
     processo = x.find('_processo')
