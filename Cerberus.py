@@ -38,7 +38,7 @@ for x in root.findall("./*"):
         workinset_sem_pontos= ''.join(c for c in processo_lista[1] if c not in '("){.}<>_,')
         workinget_numeros  = int(workinset_sem_pontos)
         if workinget_numeros >= 1580142592:
-            print ("Workingset: ", Back.RED, workinget_numeros, Style.RESET_ALL,"|",  "\n")
+            print ("Workingset: ", Back.RED, workinget_numeros, Style.RESET_ALL,"|\n")
 
 #Access the StatusBasic row     
     statusbasic = x.find('_statusbasic')
